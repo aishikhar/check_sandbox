@@ -1,2 +1,9 @@
-
+*.png
+*.mat
+*.svs
+*.tif
+*.zip*
+*.tar.gz*
+*testing_code/model_saved/*
 *testing_code/data/*
+*testing_code/output/*

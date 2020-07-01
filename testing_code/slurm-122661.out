@@ -1,0 +1,1235 @@
+Failed to load OpenCL runtime
+2020-06-03 04:49:37.204582: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-03 04:49:38.243705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:38.715040: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:39.245371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:39.838389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:40.441360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 4 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:41.071396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 5 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:41.756928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 6 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:42.437801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 7 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 31.72GiB freeMemory: 31.31GiB
+2020-06-03 04:49:42.438157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2020-06-03 04:49:46.200543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-03 04:49:46.201713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 4 5 6 7 
+2020-06-03 04:49:46.201748: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y Y N N N 
+2020-06-03 04:49:46.201762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y N Y N N 
+2020-06-03 04:49:46.201775: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y N N Y N 
+2020-06-03 04:49:46.201787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N N N N Y 
+2020-06-03 04:49:46.201799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 4:   Y N N N N Y Y Y 
+2020-06-03 04:49:46.201811: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 5:   N Y N N Y N Y Y 
+2020-06-03 04:49:46.201823: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 6:   N N Y N Y Y N Y 
+2020-06-03 04:49:46.201835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 7:   N N N Y Y Y Y N 
+2020-06-03 04:49:46.207521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:0 with 30379 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.208292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:1 with 30379 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-32GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.208864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:2 with 30379 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-32GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.209312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:3 with 30379 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-32GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.209782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:4 with 30378 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-32GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.210214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:5 with 30379 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-32GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.210710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:6 with 30379 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-32GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2020-06-03 04:49:46.211227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:7 with 30379 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-32GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+[32m[0603 04:49:46 @varmanip.py:180][0m Checkpoint path /home/dm1/shikhar/check_sandbox/testing_code/model_saved/model-33198.index is auto-corrected to /home/dm1/shikhar/check_sandbox/testing_code/model_saved/model-33198.
+[32m[0603 04:49:46 @develop.py:96][0m [5m[31mWRN[0m [Deprecated] ModelDescBase._get_inputs() interface will be deprecated after 30 Mar. Use inputs() instead!
+[32m[0603 04:49:46 @develop.py:96][0m [5m[31mWRN[0m [Deprecated] ModelDescBase._build_graph() interface will be deprecated after 30 Mar. Use build_graph() instead!
+[32m[0603 04:49:46 @registry.py:121][0m conv0 input: [None, 3, 270, 270]
+[32m[0603 04:49:46 @registry.py:129][0m conv0 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block0/conv1 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block0/conv1 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block0/conv2 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block0/conv2 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block0/conv3 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block0/conv3 output: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block0/convshortcut input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block0/convshortcut output: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block1/conv1 input: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block1/conv1 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block1/conv2 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block1/conv2 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block1/conv3 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block1/conv3 output: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block2/conv1 input: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block2/conv1 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block2/conv2 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block2/conv2 output: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group0/block2/conv3 input: [None, 64, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group0/block2/conv3 output: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block0/conv1 input: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block0/conv1 output: [None, 128, 264, 264]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block0/conv2 input: [None, 128, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block0/conv2 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block0/conv3 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block0/conv3 output: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block0/convshortcut input: [None, 256, 264, 264]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block0/convshortcut output: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block1/conv1 input: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block1/conv1 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block1/conv2 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block1/conv2 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block1/conv3 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block1/conv3 output: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block2/conv1 input: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block2/conv1 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block2/conv2 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block2/conv2 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block2/conv3 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block2/conv3 output: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block3/conv1 input: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block3/conv1 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block3/conv2 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block3/conv2 output: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group1/block3/conv3 input: [None, 128, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group1/block3/conv3 output: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block0/conv1 input: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group2/block0/conv1 output: [None, 256, 132, 132]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block0/conv2 input: [None, 256, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group2/block0/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block0/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:46 @registry.py:129][0m group2/block0/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block0/convshortcut input: [None, 512, 132, 132]
+[32m[0603 04:49:46 @registry.py:129][0m group2/block0/convshortcut output: [None, 1024, 66, 66]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block1/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:46 @registry.py:129][0m group2/block1/conv1 output: [None, 256, 66, 66]
+[32m[0603 04:49:46 @registry.py:121][0m group2/block1/conv2 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block1/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block1/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block1/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block2/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block2/conv1 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block2/conv2 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block2/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block2/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block2/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block3/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block3/conv1 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block3/conv2 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block3/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block3/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block3/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block4/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block4/conv1 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block4/conv2 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block4/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block4/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block4/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block5/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block5/conv1 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block5/conv2 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block5/conv2 output: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group2/block5/conv3 input: [None, 256, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group2/block5/conv3 output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block0/conv1 input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block0/conv1 output: [None, 512, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block0/conv2 input: [None, 512, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block0/conv2 output: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block0/conv3 input: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block0/conv3 output: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block0/convshortcut input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block0/convshortcut output: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block1/conv1 input: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block1/conv1 output: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block1/conv2 input: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block1/conv2 output: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block1/conv3 input: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block1/conv3 output: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block2/conv1 input: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block2/conv1 output: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block2/conv2 input: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block2/conv2 output: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m group3/block2/conv3 input: [None, 512, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m group3/block2/conv3 output: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m conv_bot input: [None, 2048, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m conv_bot output: [None, 1024, 33, 33]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/rz input: [None, 1024, 33, 33]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/rz output: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/conva input: [None, 1024, 66, 66]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/conva output: [None, 256, 62, 62]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/0/conv1 input: [None, 256, 62, 62]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/0/conv1 output: [None, 128, 62, 62]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/0/conv2 input: [None, 128, 62, 62]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/0/conv2 output: [None, 32, 58, 58]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/1/conv1 input: [None, 288, 58, 58]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/1/conv1 output: [None, 128, 58, 58]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/1/conv2 input: [None, 128, 58, 58]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/1/conv2 output: [None, 32, 54, 54]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/2/conv1 input: [None, 320, 54, 54]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/2/conv1 output: [None, 128, 54, 54]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/2/conv2 input: [None, 128, 54, 54]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/2/conv2 output: [None, 32, 50, 50]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/3/conv1 input: [None, 352, 50, 50]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/3/conv1 output: [None, 128, 50, 50]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/3/conv2 input: [None, 128, 50, 50]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/3/conv2 output: [None, 32, 46, 46]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/4/conv1 input: [None, 384, 46, 46]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/4/conv1 output: [None, 128, 46, 46]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/4/conv2 input: [None, 128, 46, 46]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/4/conv2 output: [None, 32, 42, 42]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/5/conv1 input: [None, 416, 42, 42]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/5/conv1 output: [None, 128, 42, 42]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/5/conv2 input: [None, 128, 42, 42]
+[32m[0603 04:49:47 @registry.py:129][0m np/u3/dense/blk/5/conv2 output: [None, 32, 38, 38]
+[32m[0603 04:49:47 @registry.py:121][0m np/u3/dense/blk/6/conv1 input: [None, 448, 38, 38]
+[32m[0603 04:49:48 @registry.py:129][0m np/u3/dense/blk/6/conv1 output: [None, 128, 38, 38]
+[32m[0603 04:49:48 @registry.py:121][0m np/u3/dense/blk/6/conv2 input: [None, 128, 38, 38]
+[32m[0603 04:49:48 @registry.py:129][0m np/u3/dense/blk/6/conv2 output: [None, 32, 34, 34]
+[32m[0603 04:49:48 @registry.py:121][0m np/u3/dense/blk/7/conv1 input: [None, 480, 34, 34]
+[32m[0603 04:49:48 @registry.py:129][0m np/u3/dense/blk/7/conv1 output: [None, 128, 34, 34]
+[32m[0603 04:49:48 @registry.py:121][0m np/u3/dense/blk/7/conv2 input: [None, 128, 34, 34]
+[32m[0603 04:49:48 @registry.py:129][0m np/u3/dense/blk/7/conv2 output: [None, 32, 30, 30]
+[32m[0603 04:49:48 @registry.py:121][0m np/u3/convf input: [None, 512, 30, 30]
+[32m[0603 04:49:48 @registry.py:129][0m np/u3/convf output: [None, 512, 30, 30]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/rz input: [None, 512, 30, 30]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/rz output: [None, 512, 60, 60]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/conva input: [None, 512, 60, 60]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/conva output: [None, 128, 56, 56]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/0/conv1 input: [None, 128, 56, 56]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/0/conv1 output: [None, 128, 56, 56]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/0/conv2 input: [None, 128, 56, 56]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/0/conv2 output: [None, 32, 52, 52]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/1/conv1 input: [None, 160, 52, 52]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/1/conv1 output: [None, 128, 52, 52]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/1/conv2 input: [None, 128, 52, 52]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/1/conv2 output: [None, 32, 48, 48]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/2/conv1 input: [None, 192, 48, 48]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/2/conv1 output: [None, 128, 48, 48]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/2/conv2 input: [None, 128, 48, 48]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/2/conv2 output: [None, 32, 44, 44]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/3/conv1 input: [None, 224, 44, 44]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/3/conv1 output: [None, 128, 44, 44]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/dense/blk/3/conv2 input: [None, 128, 44, 44]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/dense/blk/3/conv2 output: [None, 32, 40, 40]
+[32m[0603 04:49:48 @registry.py:121][0m np/u2/convf input: [None, 256, 40, 40]
+[32m[0603 04:49:48 @registry.py:129][0m np/u2/convf output: [None, 256, 40, 40]
+[32m[0603 04:49:48 @registry.py:121][0m np/u1/rz input: [None, 256, 40, 40]
+[32m[0603 04:49:48 @registry.py:129][0m np/u1/rz output: [None, 256, 80, 80]
+[32m[0603 04:49:48 @registry.py:121][0m np/u1/conva input: [None, 256, 80, 80]
+[32m[0603 04:49:48 @registry.py:129][0m np/u1/conva output: [None, 64, 80, 80]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/rz input: [None, 1024, 33, 33]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/rz output: [None, 1024, 66, 66]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/conva input: [None, 1024, 66, 66]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/conva output: [None, 256, 62, 62]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/0/conv1 input: [None, 256, 62, 62]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/0/conv1 output: [None, 128, 62, 62]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/0/conv2 input: [None, 128, 62, 62]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/0/conv2 output: [None, 32, 58, 58]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/1/conv1 input: [None, 288, 58, 58]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/1/conv1 output: [None, 128, 58, 58]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/1/conv2 input: [None, 128, 58, 58]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/1/conv2 output: [None, 32, 54, 54]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/2/conv1 input: [None, 320, 54, 54]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/2/conv1 output: [None, 128, 54, 54]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/2/conv2 input: [None, 128, 54, 54]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/2/conv2 output: [None, 32, 50, 50]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/3/conv1 input: [None, 352, 50, 50]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/3/conv1 output: [None, 128, 50, 50]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/3/conv2 input: [None, 128, 50, 50]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/3/conv2 output: [None, 32, 46, 46]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/4/conv1 input: [None, 384, 46, 46]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/4/conv1 output: [None, 128, 46, 46]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/4/conv2 input: [None, 128, 46, 46]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/4/conv2 output: [None, 32, 42, 42]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/5/conv1 input: [None, 416, 42, 42]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/5/conv1 output: [None, 128, 42, 42]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/5/conv2 input: [None, 128, 42, 42]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/5/conv2 output: [None, 32, 38, 38]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/6/conv1 input: [None, 448, 38, 38]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/6/conv1 output: [None, 128, 38, 38]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/6/conv2 input: [None, 128, 38, 38]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/6/conv2 output: [None, 32, 34, 34]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/7/conv1 input: [None, 480, 34, 34]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/7/conv1 output: [None, 128, 34, 34]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/dense/blk/7/conv2 input: [None, 128, 34, 34]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/dense/blk/7/conv2 output: [None, 32, 30, 30]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u3/convf input: [None, 512, 30, 30]
+[32m[0603 04:49:48 @registry.py:129][0m hv/u3/convf output: [None, 512, 30, 30]
+[32m[0603 04:49:48 @registry.py:121][0m hv/u2/rz input: [None, 512, 30, 30]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/rz output: [None, 512, 60, 60]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/conva input: [None, 512, 60, 60]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/conva output: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/0/conv1 input: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/0/conv1 output: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/0/conv2 input: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/0/conv2 output: [None, 32, 52, 52]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/1/conv1 input: [None, 160, 52, 52]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/1/conv1 output: [None, 128, 52, 52]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/1/conv2 input: [None, 128, 52, 52]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/1/conv2 output: [None, 32, 48, 48]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/2/conv1 input: [None, 192, 48, 48]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/2/conv1 output: [None, 128, 48, 48]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/2/conv2 input: [None, 128, 48, 48]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/2/conv2 output: [None, 32, 44, 44]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/3/conv1 input: [None, 224, 44, 44]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/3/conv1 output: [None, 128, 44, 44]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/dense/blk/3/conv2 input: [None, 128, 44, 44]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/dense/blk/3/conv2 output: [None, 32, 40, 40]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u2/convf input: [None, 256, 40, 40]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u2/convf output: [None, 256, 40, 40]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u1/rz input: [None, 256, 40, 40]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u1/rz output: [None, 256, 80, 80]
+[32m[0603 04:49:49 @registry.py:121][0m hv/u1/conva input: [None, 256, 80, 80]
+[32m[0603 04:49:49 @registry.py:129][0m hv/u1/conva output: [None, 64, 80, 80]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/rz input: [None, 1024, 33, 33]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/rz output: [None, 1024, 66, 66]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/conva input: [None, 1024, 66, 66]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/conva output: [None, 256, 62, 62]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/0/conv1 input: [None, 256, 62, 62]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/0/conv1 output: [None, 128, 62, 62]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/0/conv2 input: [None, 128, 62, 62]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/0/conv2 output: [None, 32, 58, 58]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/1/conv1 input: [None, 288, 58, 58]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/1/conv1 output: [None, 128, 58, 58]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/1/conv2 input: [None, 128, 58, 58]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/1/conv2 output: [None, 32, 54, 54]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/2/conv1 input: [None, 320, 54, 54]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/2/conv1 output: [None, 128, 54, 54]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/2/conv2 input: [None, 128, 54, 54]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/2/conv2 output: [None, 32, 50, 50]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/3/conv1 input: [None, 352, 50, 50]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/3/conv1 output: [None, 128, 50, 50]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/3/conv2 input: [None, 128, 50, 50]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/3/conv2 output: [None, 32, 46, 46]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/4/conv1 input: [None, 384, 46, 46]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/4/conv1 output: [None, 128, 46, 46]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/4/conv2 input: [None, 128, 46, 46]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/4/conv2 output: [None, 32, 42, 42]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/5/conv1 input: [None, 416, 42, 42]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/5/conv1 output: [None, 128, 42, 42]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/5/conv2 input: [None, 128, 42, 42]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/5/conv2 output: [None, 32, 38, 38]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/6/conv1 input: [None, 448, 38, 38]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/6/conv1 output: [None, 128, 38, 38]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/6/conv2 input: [None, 128, 38, 38]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/6/conv2 output: [None, 32, 34, 34]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/7/conv1 input: [None, 480, 34, 34]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/7/conv1 output: [None, 128, 34, 34]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/dense/blk/7/conv2 input: [None, 128, 34, 34]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/dense/blk/7/conv2 output: [None, 32, 30, 30]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u3/convf input: [None, 512, 30, 30]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u3/convf output: [None, 512, 30, 30]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u2/rz input: [None, 512, 30, 30]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u2/rz output: [None, 512, 60, 60]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u2/conva input: [None, 512, 60, 60]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u2/conva output: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u2/dense/blk/0/conv1 input: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u2/dense/blk/0/conv1 output: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u2/dense/blk/0/conv2 input: [None, 128, 56, 56]
+[32m[0603 04:49:49 @registry.py:129][0m tp/u2/dense/blk/0/conv2 output: [None, 32, 52, 52]
+[32m[0603 04:49:49 @registry.py:121][0m tp/u2/dense/blk/1/conv1 input: [None, 160, 52, 52]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/1/conv1 output: [None, 128, 52, 52]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/dense/blk/1/conv2 input: [None, 128, 52, 52]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/1/conv2 output: [None, 32, 48, 48]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/dense/blk/2/conv1 input: [None, 192, 48, 48]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/2/conv1 output: [None, 128, 48, 48]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/dense/blk/2/conv2 input: [None, 128, 48, 48]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/2/conv2 output: [None, 32, 44, 44]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/dense/blk/3/conv1 input: [None, 224, 44, 44]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/3/conv1 output: [None, 128, 44, 44]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/dense/blk/3/conv2 input: [None, 128, 44, 44]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/dense/blk/3/conv2 output: [None, 32, 40, 40]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u2/convf input: [None, 256, 40, 40]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u2/convf output: [None, 256, 40, 40]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u1/rz input: [None, 256, 40, 40]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u1/rz output: [None, 256, 80, 80]
+[32m[0603 04:49:50 @registry.py:121][0m tp/u1/conva input: [None, 256, 80, 80]
+[32m[0603 04:49:50 @registry.py:129][0m tp/u1/conva output: [None, 64, 80, 80]
+[32m[0603 04:49:50 @registry.py:121][0m conv_out_tp input: [None, 64, 80, 80]
+[32m[0603 04:49:50 @registry.py:129][0m conv_out_tp output: [None, 5, 80, 80]
+[32m[0603 04:49:50 @registry.py:121][0m conv_out_np input: [None, 64, 80, 80]
+[32m[0603 04:49:50 @registry.py:129][0m conv_out_np output: [None, 2, 80, 80]
+[32m[0603 04:49:50 @registry.py:121][0m conv_out_hv input: [None, 64, 80, 80]
+[32m[0603 04:49:50 @registry.py:129][0m conv_out_hv output: [None, 2, 80, 80]
+[32m[0603 04:49:50 @sessinit.py:90][0m [5m[31mWRN[0m The following variables are in the checkpoint, but not found in the graph: beta1_power:0, beta2_power:0, global_step:0, learning_rate:0
+2020-06-03 04:49:52.149573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2020-06-03 04:49:52.150046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-03 04:49:52.150059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 4 5 6 7 
+2020-06-03 04:49:52.150064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y Y N N N 
+2020-06-03 04:49:52.150069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y N Y N N 
+2020-06-03 04:49:52.150073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y N N Y N 
+2020-06-03 04:49:52.150077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N N N N Y 
+2020-06-03 04:49:52.150081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 4:   Y N N N N Y Y Y 
+2020-06-03 04:49:52.150085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 5:   N Y N N Y N Y Y 
+2020-06-03 04:49:52.150090: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 6:   N N Y N Y Y N Y 
+2020-06-03 04:49:52.150094: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 7:   N N N Y Y Y Y N 
+2020-06-03 04:49:52.153669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30379 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.153909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 30379 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-32GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.154150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 30379 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-32GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.154362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 30379 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-32GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.154637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 30378 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-32GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.154838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 30379 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-32GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.155065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 30379 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-32GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2020-06-03 04:49:52.155287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 30379 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-32GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+[32m[0603 04:49:54 @sessinit.py:117][0m Restoring checkpoint from /home/dm1/shikhar/check_sandbox/testing_code/model_saved/model-33198 ...
+26
+
+
+ Creation of the patient's directory  failed
+TCGA-EW-A6SB-01Z-00-DX1
+/TCGA-EW-A6SB-01Z-00-DX1_004
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-EW-A6SB-01Z-00-DX1_002
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-EW-A6SB-01Z-00-DX1_001
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-EW-A6SB-01Z-00-DX1_005
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-EW-A6SB-01Z-00-DX1_003
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-IZ-A6M9-01Z-00-DX1
+/TCGA-IZ-A6M9-01Z-00-DX1_2
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-IZ-A6M9-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-IZ-A6M9-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-55-7573-01Z-00-DX1
+/TCGA-55-7573-01Z-00-DX1_004
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-55-7573-01Z-00-DX1_002
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-55-7573-01Z-00-DX1_001
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-55-7573-01Z-00-DX1_003
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-A2-A04X-01Z-00-DX1
+/TCGA-A2-A04X-01Z-00-DX1_004
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A04X-01Z-00-DX1_002
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A04X-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A04X-01Z-00-DX1_003
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-73-4662-01Z-00-DX1
+/TCGA-73-4662-01Z-00-DX1_002
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-73-4662-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-73-4662-01Z-00-DX1_003
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-A2-A0ES-01Z-00-DX1
+/TCGA-A2-A0ES-01Z-00-DX1_004
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A0ES-01Z-00-DX1_002
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A0ES-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-A2-A0ES-01Z-00-DX1_003
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-DW-7963-01Z-00-DX1
+/TCGA-DW-7963-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7963-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7963-01Z-00-DX1_5
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7963-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7963-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-G9-6356-01Z-00-DX1
+/TCGA-G9-6356-01Z-00-DX1_4
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6356-01Z-00-DX1_6
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6356-01Z-00-DX1_5
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6356-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6356-01Z-00-DX1_3
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-50-6591-01Z-00-DX1
+/TCGA-50-6591-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-YL-A9WL-01Z-00-DX1
+/TCGA-YL-A9WL-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-YL-A9WL-01Z-00-DX1_4
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-YL-A9WL-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-YL-A9WL-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-49-6743-01Z-00-DX2
+/TCGA-49-6743-01Z-00-DX2_002
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-49-6743-01Z-00-DX2_004
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-49-6743-01Z-00-DX2_003
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-49-6743-01Z-00-DX2_001
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-49-6743-01Z-00-DX2_005
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-VP-A87H-01Z-00-DX1
+/TCGA-VP-A87H-01Z-00-DX1_2
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87H-01Z-00-DX1_6
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87H-01Z-00-DX1_5
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87H-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-78-7152-01Z-00-DX1
+/TCGA-78-7152-01Z-00-DX1_002
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-78-7152-01Z-00-DX1_001
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-2Z-A9JN-01Z-00-DX1
+/TCGA-2Z-A9JN-01Z-00-DX1_2
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JN-01Z-00-DX1_4
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JN-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JN-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-G9-6367-01Z-00-DX1
+/TCGA-G9-6367-01Z-00-DX1_2
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_6
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_3
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_7
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_5
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-G9-6367-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-D8-A3Z6-01Z-00-DX2
+/TCGA-D8-A3Z6-01Z-00-DX2_003
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-D8-A3Z6-01Z-00-DX2_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-D8-A3Z6-01Z-00-DX2_004
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-D8-A3Z6-01Z-00-DX2_002
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-E2-A108-01Z-00-DX1
+/TCGA-E2-A108-01Z-00-DX1_003
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-E2-A108-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-E2-A108-01Z-00-DX1_005
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-E2-A108-01Z-00-DX1_004
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-E2-A108-01Z-00-DX1_002
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-MP-A4T7-01Z-00-DX1
+/TCGA-MP-A4T7-01Z-00-DX1_003
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MP-A4T7-01Z-00-DX1_005
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MP-A4T7-01Z-00-DX1_001
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MP-A4T7-01Z-00-DX1_004
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MP-A4T7-01Z-00-DX1_002
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-55-7570-01Z-00-DX1
+/TCGA-55-7570-01Z-00-DX1_001
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-55-7570-01Z-00-DX1_002
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-X4-A8KS-01Z-00-DX3
+/TCGA-X4-A8KS-01Z-00-DX3_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-DW-7838-01Z-00-DX1
+/TCGA-DW-7838-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7838-01Z-00-DX1_5
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7838-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7838-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-DW-7838-01Z-00-DX1_2
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-VP-A87E-01Z-00-DX1
+/TCGA-VP-A87E-01Z-00-DX1_5
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87E-01Z-00-DX1_1
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87E-01Z-00-DX1_3
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87E-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-VP-A87E-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-F9-A8NY-01Z-00-DX1
+/TCGA-F9-A8NY-01Z-00-DX1_1
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-F9-A8NY-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-F9-A8NY-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-F9-A8NY-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-MH-A55W-01Z-00-DX1
+/TCGA-MH-A55W-01Z-00-DX1_1
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MH-A55W-01Z-00-DX1_3
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MH-A55W-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-MH-A55W-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+TCGA-2Z-A9JG-01Z-00-DX1
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:524: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/dm1/miniconda3/envs/opencv1/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:532: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/TCGA-2Z-A9JG-01Z-00-DX1_1
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JG-01Z-00-DX1_5
+[Warn] Instance has `background` type
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JG-01Z-00-DX1_3
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JG-01Z-00-DX1_2
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JG-01Z-00-DX1_6
+[Warn] Instance has `background` type
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
+/TCGA-2Z-A9JG-01Z-00-DX1_4
+Successfully created the directory Epithelial 
+Successfully created the directory Lymphocyte 
+Successfully created the directory Macrophage 
+Successfully created the directory Neutrophil 
